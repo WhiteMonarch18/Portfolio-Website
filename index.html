@@ -10,28 +10,79 @@
 </head>
 <body>
     <div id="header">
-        <div id="nav">
-            <div id="logo">
-                <h1>e<span id="logo-letter">M</span>manuel</h1>
+        <video src="./resources/bannerVideo.mp4" autoplay muted loop>Your browser does not support the video tag.</video>
+            <div id="nav">
+                <div id="logo">
+                    <h1>e<span id="logo-letter">M</span>manuel.</h1>
+                </div>
+                <nav>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#about">About</a></li>
+                        <li class="nav-item"><a href="#skills">Skills</a></li>
+                        <li class="nav-item"><a href="#projects">Projects</a></li>
+                        <li class="nav-item"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#home">Home</a></li>
-                    <li class="nav-item"><a href="#about">About</a></li>
-                    <li class="nav-item"><a href="#projects">Projects</a></li>
-                    <li class="nav-item"><a href="#contact">Contact</a></li>
+            <div id="home">
+                <div id="hero">
+                    <!-- <div id="hero-image">
+                        <img src="https://via.placeholder.com/150" alt="Hero Image">
+                    </div> -->
+                    <div id="hero-content">
+                        <h1>I am a <span id="profession">Web Developer</span></h1>
+                        <p>Explore my projects and skills</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div id="main">
+        <div id="about">
+            <div id="about-content">
+                <h2>About <span id="logo-letter">M</span>e</h2>
+                <p>Welcome to my portfolio website! I am a passionate web developer with a 
+                love for creating dynamic and responsive web applications. <br> My journey in web 
+                development has been fueled by curiosity and a desire to build innovative solutions.</p>
+            </div>
+            <img src="./resources/emmanuelpp2.jpg" alt="Emmanuel's Photo" id="profile-photo">
+        </div>
+        <div id="about-lists">
+            <div class="about-list" id="education-list">
+                <h3>Education</h3>
+                <ul>
+                    <li class="education-item">
+                        Bachelor of Science in Civil Engineering<br>
+                        <i>Florida International University, Miami, FL</i><br>
+                    </li>
+                    <li class="education-item">
+                        Double Major in Civil Engineering<br>
+                        <i>Universidad Iberoamericana, Santo Domingo, DR</i>
+                    </li>  
                 </ul>
-            </nav>
-        </div>
-        <div id="hero">
-            <div id="hero-image">
-                <img src="https://via.placeholder.com/150" alt="Hero Image">
             </div>
-            <div id="hero-content">
-                <h1>I am a <span id="profession">Web Developer</span></h1>
-                <p>Explore my projects and skills</p>
+            <div class="about-list" id="experience-list">
+                <h3>Experience</h3>
+                <ul>
+                    <li class="experience-item">
+                        <h4>On-Site Engineer / Project Manager</h4>
+                        <i>Constructora Rubi, Santo Domingo, DR</i><br>
+                        <i><strong>2021 - 2025</strong></i>
+                    </li>
+                    <li class="experience-item">
+                        <h4>Project Manager</h4>
+                        <i>Inversioner Randford, Santo Domingo, DR</i><br>
+                        <i><strong>2020 - 2021</strong></i>
+                    </li>
+                    <li class="experience-item">
+                        <h4>Junior On-Site Engineer</h4>
+                        <i>RM Ingenieros, Santo Domingo, DR</i><br>
+                        <i><strong>2016 - 2018</strong></i>
+                    </li> 
+                </ul>
             </div>
         </div>
-    <script src="hero.js"></script>
+    </div>
+    <script src="script.js"></script>
+
 </body>
 </html>
