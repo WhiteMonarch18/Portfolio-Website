@@ -33,3 +33,10 @@ function typeEffect() {
 document.addEventListener("DOMContentLoaded", () => {
     typeEffect(); // Start the typing effect when the DOM is fully loaded
 });
+
+// Add smooth scrolling to all links
+document.addEventListener('DOMContentLoaded', () => {
+  const track = document.getElementById('skillsTrack');
+  const clone = track.cloneNode(true); // deep clone = true
+  document.getElementById('skillsWrapper').appendChild(clone);
+});
