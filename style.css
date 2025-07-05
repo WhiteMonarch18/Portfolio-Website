@@ -19,8 +19,6 @@ body {
     font-family: var(--font-family);
     font-size: var(--font-size);
     line-height: var(--line-height);
-    margin: 0;
-    padding: 0;
     background-color: var(--background-color);
 }
 
@@ -34,7 +32,7 @@ h1 span {
     font-size: 24px;
 }
 #nav {
-    padding: 20px;
+    padding: 10px 0px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,4 +63,28 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width:100%;
     transition: width 0.5s ease;
+}
+
+#header {
+    padding: 20px;
+    display: block  ;
+}
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    text-align: center;
+    /* background-color: var(--primary-color); */
+    /* box-shadow: 0 4px 10px var(--shadow-color); */
+}
+#hero-content {
+    
+    color: var(--text-color);
+    font-size: 24px;
+}
+#profession {
+    color: var(--accent-color);
+    font-size: 45px;
 }
