@@ -146,8 +146,6 @@ nav ul li a:hover::after {
 #about img {
     width: 40%;
     height: auto;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(43, 42, 42, 0.2);
     margin-bottom: 20px;
     opacity: 0.8;
 }
@@ -269,39 +267,55 @@ nav ul li a:hover::after {
     font-size: 3rem ;
 }
 
-.skills-container {
-    overflow: hidden;
+.wrapper {
+    /* border: white 1px solid; */
+    height: 100px;
     width: 100%;
-    padding: 1rem 0;
+    position: relative;
+    overflow: hidden;
+}
+.item {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 100%;
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* display: none; */
 }
 
-.skills-wrapper {
-    display: flex;
-    width: max-content;
-    animation: scrollLeft 20s linear infinite;
-}
-.track {
-    display: flex;
-    gap: 2rem;
-    margin-left: 2rem;
+.item:nth-child(1) {
+    animation-delay: calc((30s / 6 * (6 - 1)) * -1);
 }
 
-.skill-icon {
-    height: 50px;
-    width: 50px;
-    object-fit: contain;
-    transition: transform 0.3s;
+.item:nth-child(2) {
+    animation-delay: calc((30s / 6 * (6 - 2)) * -1);
 }
-.skill-icon:hover {
-    transform: scale(1.2);
+
+.item:nth-child(3) {
+    animation-delay: calc((30s / 6 * (6 - 3)) * -1);
+}
+
+.item:nth-child(4) {
+    animation-delay: calc((30s / 6 * (6 - 4)) * -1);
+}
+
+.item:nth-child(5) {
+    animation-delay: calc((30s / 6 * (6 - 5)) * -1);
+}
+
+.item:nth-child(6) {
+    animation-delay: calc((30s / 6 * (6 - 6)) * -1);
 }
 
 @keyframes scrollLeft {
     0% {
-        transform: translateX(100%);
+        left: 100%;
     }
     100% {
-        transform: translateX(-50%);
+        left: -100%;
     }
 }
 /* ----------- projects section ------------------ */
