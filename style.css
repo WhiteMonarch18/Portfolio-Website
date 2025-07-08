@@ -287,27 +287,39 @@ nav ul li a:hover::after {
 }
 
 .item:nth-child(1) {
-    animation-delay: calc((30s / 6 * (6 - 1)) * -1);
+    animation-delay: calc((30s / 9 * (9 - 1)) * -1);
 }
 
 .item:nth-child(2) {
-    animation-delay: calc((30s / 6 * (6 - 2)) * -1);
+    animation-delay: calc((30s / 9 * (9 - 2)) * -1);
 }
 
 .item:nth-child(3) {
-    animation-delay: calc((30s / 6 * (6 - 3)) * -1);
+    animation-delay: calc((30s / 9 * (9 - 3)) * -1);
 }
 
 .item:nth-child(4) {
-    animation-delay: calc((30s / 6 * (6 - 4)) * -1);
+    animation-delay: calc((30s / 9 * (9 - 4)) * -1);
 }
 
 .item:nth-child(5) {
-    animation-delay: calc((30s / 6 * (6 - 5)) * -1);
+    animation-delay: calc((30s / 9 * (9 - 5)) * -1);
 }
 
 .item:nth-child(6) {
-    animation-delay: calc((30s / 6 * (6 - 6)) * -1);
+    animation-delay: calc((30s / 9 * (9 - 6)) * -1);
+}
+
+.item:nth-child(7) {
+    animation-delay: calc((30s / 9 * (9 - 7)) * -1);
+}
+
+.item:nth-child(8) {
+    animation-delay: calc((30s / 9 * (9 - 8)) * -1);
+}
+
+.item:nth-child(9) {
+    animation-delay: calc((30s / 9 * (9 - 9)) * -1);
 }
 
 @keyframes scrollLeft {
@@ -381,12 +393,49 @@ nav ul li a:hover::after {
         margin: 20px 0;
     }
 
-    .skills-container {
-        width: 100%;
+    .wrapper {
+        height: 80px;
+    }
+    .item {
+        height: 80px;
+        width: 80px;
+        animation-duration: 20s;
     }
 
-    .skill-icon {
-        height: 50px;
-        width: 50px;
+    .item:nth-child(1) {
+        animation-delay: calc((20s / 9 * (9 - 1)) * -1);
     }
+
+    .item:nth-child(2) {
+        animation-delay: calc((20s / 9 * (9 - 2)) * -1);
+    }
+
+    .item:nth-child(3) {
+        animation-delay: calc((20s / 9 * (9 - 3)) * -1);
+    }
+
+    .item:nth-child(4) {
+        animation-delay: calc((20s / 9 * (9 - 4)) * -1);
+    }
+
+    .item:nth-child(5) {
+        animation-delay: calc((20s / 9 * (9 - 5)) * -1);
+    }
+
+    .item:nth-child(6) {
+        animation-delay: calc((20s / 9 * (9 - 6)) * -1);
+    }
+
+    .item:nth-child(7) {
+        animation-delay: calc((20s / 9 * (9 - 7)) * -1);
+    }
+
+    .item:nth-child(8) {
+        animation-delay: calc((20s / 9 * (9 - 8)) * -1);
+    }
+
+    .item:nth-child(9) {
+        animation-delay: calc((20s / 9 * (9 - 9)) * -1);
+    }
+
 }
